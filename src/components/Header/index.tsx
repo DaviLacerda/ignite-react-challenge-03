@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { MdShoppingBasket } from 'react-icons/md';
 
@@ -9,11 +9,6 @@ import { useCart } from '../../hooks/useCart';
 const Header = (): JSX.Element => {
   const { cart } = useCart();
   const cartSize = cart.length
-  
-  useEffect(() => {
-    console.log(cart, cartSize);
-  }, [cart])
-  
 
   return (
     <Container>
